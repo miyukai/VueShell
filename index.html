@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>果壳儿</title>
+    <link rel="stylesheet" type="text/css" href="guoke.css"/>
+  </head>
+  <body>
+    <div id="app">
+    	<div class="head">
+				<header>
+					<div>
+						<img src="./src/assets/nav.jpg"/>
+						<span>GuoKr.com</span>
+						<img src="./src/assets/pc_1.jpg"/>
+					</div>
+				</header>
+				<div class="nav">
+					<div>
+						<div><img src="./src/assets/ren.jpg"/><span>用户登录</span></div>
+						<div><img src="./src/assets/zhuce.jpg"/><span>用户注册</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="banner">
+					<img src="./src/assets/banner.jpg"/>
+				</div>
+				<div class="list_1">
+					<ul>
+						<li>穿山甲全部8个种正式列入CITES附录了！..</li>
+						<li>神秘AI已连续击败50名顶尖围棋棋手</li>
+						<li>最好的新年礼物,是能带来回忆的东西</li>
+						<li>穿山甲全部8个种正式列入CITES附录了！..</li>
+						<li>神秘AI已连续击败50名顶尖围棋棋手</li>
+						<li>最好的新年礼物,是能带来回忆的东西</li>
+						<li>食物仅仅是果腹?想的太简单了!想得太..</li>
+					</ul>
+				</div>
+				<div class="list_2">
+					<div class="list2_head">
+						<span>热门回答</span>
+						<img src="./src/assets/geng.jpg" />
+					</div>
+					<div class="list2_bot">
+						<div class="list2_bot_h">
+							<router-link to="/science" tag="div" active-class="underTheWire">科技</router-link>
+							<router-link to="/live" tag="div" active-class="underTheWire">生活</router-link>
+							<router-link to="/humanity" tag="div" active-class="underTheWire">人文</router-link>
+							<router-link to="/nature" tag="div" active-class="underTheWire">自然</router-link>
+						</div>
+						<ul>
+							<li v-for="acti in acti">
+								{{acti.title}}
+							</li>
+						</ul>
+						<router-view></router-view>
+					</div>
+				</div>
+				<div class="list_3">
+					<div class="list2_head">
+						<span>热门回答</span>
+						<img src="./src/assets/geng.jpg" />
+					</div>
+					<div class="list2_bot">
+						<div class="list2_bot_h">
+							<router-link to="/scien" tag="div" active-class="underTheWire">科技</router-link>
+							<router-link to="/li" tag="div" active-class="underTheWire">生活</router-link>
+							<router-link to="/humani" tag="div" active-class="underTheWire">人文</router-link>
+							<router-link to="/natu" tag="div" active-class="underTheWire">自然</router-link>
+						</div>
+						
+					</div>
+					<router-view></router-view>
+				</div>
+			</div>
+			<footer>
+				<div>
+					<img src="./src/assets/zhi.jpg"/><span>回到顶部</span>
+				</div>
+				<div>
+					<div><img src="./src/assets/pc_2.jpg"/><span>PC版</span></div>
+					<div><img src="./src/assets/shouji.jpg"/><span>移动应用</span></div>
+				</div>
+			</footer>
+    </div>
+  </body>
+  <script src="/dist/build.js"></script>
+</html>
